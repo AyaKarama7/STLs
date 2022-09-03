@@ -1,0 +1,29 @@
+struct:help you create your own data type
+ex:
+#include<struct>
+struct point{
+int x,double d;char c;string s;
+};
+int main()
+{
+point p;
+cin>>p.x>>p.d>>p.c>>p.s;
+vector<point>v(n)
+for(int i=0;i<n;i++)cin>>v[i].x>>v[i].s;
+cout<<p.x;
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+pair:include 2 values
+#include<pair>
+pair<int,int>p; pair<point,point>p; pair<string,int>p;
+cin>>p.first>>p.second;cout<<p.first<<p.second;
+vector<pair<int,int>>v; pair<int,int>arr[5];
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+vector:array with more advantages:
+1-dynamic size
+#include<vector>
+vector<data_type>v(size,initial value);
+*functions:push_back()==emplace_back()-->faster,size(),clear(),isempty(),resize(),pop_back()-->size decreased by 1,
+erase()-->erase(v.begin()+3)//erase element at position 3 ,but erase(v.begin+l,v.begin+r+1)//erase range[l:r],sort(v.begin()+l,v.begin()+r+1)-->sort range [l:r]
+reverse(v.begin()+l,v.begin()+r+1)-->reverse range [l:r]
+2D vector:vector<vector<int>>v(size,vector<int>(size));
