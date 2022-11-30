@@ -27,3 +27,7 @@ vector<data_type>v(size,initial value);
 erase()-->erase(v.begin()+3)//erase element at position 3 ,but erase(v.begin+l,v.begin+r+1)//erase range[l:r],sort(v.begin()+l,v.begin()+r+1)-->sort range [l:r]
 reverse(v.begin()+l,v.begin()+r+1)-->reverse range [l:r]
 2D vector:vector<vector<int>>v(size,vector<int>(size));
+*In 2D vector if you have a problem represents some quires asks you to swap row x with row y you don't have to use for loop just make avector row represents names 
+of rows not values (r1,r2,r3,...)then swap in this vector for more clarification see:https://codeforces.com/group/MWSDmqGsZm/contest/223207/problem/N
+
+
